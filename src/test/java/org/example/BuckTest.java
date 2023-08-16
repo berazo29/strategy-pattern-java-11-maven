@@ -14,6 +14,6 @@ class BuckTest {
     @Test
     void getFly() {
         Buck buck = new Buck();
-        buck.getFly(new mockFlying());
+        buck.setIFlyBehaviour(new mockFlying());
     }
 }

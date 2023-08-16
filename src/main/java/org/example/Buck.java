@@ -4,7 +4,8 @@ import lombok.Data;
 
 @Data
 public class Buck {
-    public void getFly(IFlyBehaviour iFlyBehaviour) {
+    private IFlyBehaviour iFlyBehaviour;
+    public void fly() {
         iFlyBehaviour.fly();
     }
 }
